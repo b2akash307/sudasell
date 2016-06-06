@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"></LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/fulllayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="83dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <ImageView
+                    android:id="@+id/ad_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="100dp"
+                    android:src="@drawable/image_add" />
+
+                <LinearLayout
+                    android:id="@+id/image_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ad_image"
+                    android:layout_marginTop="15dp"
+                    android:visibility="gone"
+                    android:weightSum="100">
+
+                    <Button
+                        android:id="@+id/delete_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:text="Add Image" />
+
+                    <Button
+                        android:id="@+id/add_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:text="Add Image"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/language"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image_linear"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/drawable_edittext_background">
+
+                </Spinner>
+
+                <Spinner
+                    android:id="@+id/cat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/language"
+                    android:layout_marginTop="15dp"
+
+                    android:background="@drawable/drawable_edittext_background">
+
+                </Spinner>
+
+                <Spinner
+                    android:id="@+id/subcat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cat"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/drawable_edittext_background">
+
+                </Spinner>
+
+                <Spinner
+                    android:id="@+id/type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/subcat"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/drawable_edittext_background">
+
+                </Spinner>
+
+                <EditText
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/type"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/drawable_edittext_background"
+                    android:cursorVisible="true"
+                    android:hint="Price"
+                    android:imeOptions="actionNext"
+                    android:padding="3dp"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/Upload_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/price"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/drawable_edittext_background"
+                    android:hint="Date"
+                    android:imeOptions="actionNext"
+                    android:inputType="date"
+                    android:padding="3dp"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/eng_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Upload_date"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/drawable_edittext_background"
+                    android:hint="English Description"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:padding="3dp"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/arabic_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/eng_desc"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/drawable_edittext_background"
+                    android:hint="Arabbic Description"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:padding="3dp"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/arabic_desc"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/drawable_edittext_background"
+                    android:hint="Contact"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:padding="3dp"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/add_english"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/contact"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/drawable_edittext_background"
+                    android:hint="Ad name in English"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:padding="3dp"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/add_arabic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/add_english"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/drawable_edittext_background"
+                    android:hint="Ad name in Arabic"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:padding="3dp"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/upload_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/add_arabic"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/drawable_blue_rounded"
+                    android:padding="8dp"
+                    android:text="Upload Advertisement"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bottom_bar_background_color"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/bottom_first_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:padding="3dp"
+            android:src="@drawable/image_notification" />
+
+        <ImageView
+            android:id="@+id/bottom_second_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:padding="3dp"
+            android:src="@drawable/image_chat" />
+
+        <ImageView
+            android:id="@+id/bottom_third_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:padding="3dp"
+            android:src="@drawable/image_add_white" />
+
+        <ImageView
+            android:id="@+id/bottom_fourth_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:padding="3dp"
+            android:src="@drawable/image_user_profile" />
+
+        <ImageView
+            android:id="@+id/bottom_fifth_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:padding="3dp"
+            android:src="@drawable/image_home" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+

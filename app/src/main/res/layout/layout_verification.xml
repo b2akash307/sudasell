@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background_color">
+
+    <EditText
+        android:hint="Enter Otp"
+        android:id="@+id/verifyid"
+        android:layout_width="120dp"
+        android:background="@drawable/drawable_blue_rounded"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="8dp"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:layout_marginTop="100dp"/>
+
+
+    <Button
+        android:id="@+id/buttonclick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/verifyid"
+        android:text="Register"
+        android:padding="8dp"
+        />
+
+
+
+</RelativeLayout>

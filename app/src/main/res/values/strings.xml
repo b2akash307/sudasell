@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Sudasell</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="Aboutus">Each version of Android since 1.5 has been developed with a specific codename. These codenames are chosen alphabetically, and have thus far all been dessert items (or, generically, sweetsugary foods). Some codenames are associated with more than one version number, while others are limited to only a specific one, and the reason for this inconsistency is not currently known. The naming typically appears to correspond to changes in the developer API levels, but this is not always true (example 3.0 and 3.1 are both Honeycomb but they have different API levels).Android didnt just happen. The origins of the worlds dominant mobile operating system can be traced right back to the beginning of the previous decade.In the first part of our Android History series, we look back on the earliest origins of the OS, the path to launching the original Android phone, the TMobile G1, and some of the influences that shaped Androids early days.And well take a rare look at one of the early Android prototypes that never saw the light of day.</string>
+
+    <string-array name="cat" >
+        <item>All</item>
+        <item>Animals</item>
+        <item>Birds</item>
+        <item>Cars</item>
+        <item>Mobiles</item>
+        <item>Land</item>
+    </string-array>
+
+</resources>

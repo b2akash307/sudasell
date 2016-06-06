@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/app_name_view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/feat_graphics"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/drawable_blue_rounded"
+        android:gravity="center_vertical">
+
+
+        <ImageView
+            android:id="@+id/appicon"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:src="@drawable/image_add" />
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/appicon"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:lines="1"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text=" "
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/dev_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/app_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/appicon"
+            android:text=" "
+            android:textColor="#fff"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dev_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/appicon">
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="#fff"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="6dp"
+            android:src="@drawable/image_delete" />
+
+    </RelativeLayout>
+
+</LinearLayout>

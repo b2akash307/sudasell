@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/fulllayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bottom_bar_background_color"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/bottom_first_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:padding="3dp"
+            android:src="@drawable/image_notification" />
+
+        <ImageView
+            android:id="@+id/bottom_second_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:padding="3dp"
+            android:src="@drawable/image_chat" />
+
+        <ImageView
+            android:id="@+id/bottom_third_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:padding="3dp"
+            android:src="@drawable/image_add_white" />
+
+        <ImageView
+            android:id="@+id/bottom_fourth_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:padding="3dp"
+            android:src="@drawable/image_user_profile" />
+
+        <ImageView
+            android:id="@+id/bottom_fifth_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:padding="3dp"
+            android:src="@drawable/image_home" />
+
+    </LinearLayout>
+</RelativeLayout>
+

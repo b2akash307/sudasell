@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#303F9F</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#fff</color>
+
+    <color name="selected_bottom_bar_color">#FF0000</color>
+    <color name="bottom_bar_background_color">#303F9F</color>
+    <color name="other_than_home_action_bar_color">#303F9F</color>
+
+    <color name="layout_background_color">#fff</color>
+
+</resources>
+

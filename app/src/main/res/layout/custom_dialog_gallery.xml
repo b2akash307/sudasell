@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="#fff"
+   >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0000FF"
+        android:id="@+id/title"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:text="Add Image"/>
+
+    <View
+        android:id="@+id/blueDevider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="5dp"
+        android:background="#0000FF" />
+    <TextView
+        android:id="@+id/camera"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="6dp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:layout_below="@+id/blueDevider"
+        android:background="@drawable/drawable_blue_rounded"
+        android:layout_centerHorizontal="true"
+        android:text="Take Pic" />
+    <TextView
+        android:id="@+id/gallery"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:padding="6dp"
+        android:background="@drawable/drawable_blue_rounded"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/camera"
+        android:text="Gallery" />
+    <TextView
+        android:id="@+id/no_image"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:padding="6dp"
+        android:background="@drawable/drawable_blue_rounded"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/gallery"
+        android:text="No Image" />
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/no_image"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="6dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/drawable_red_rounded"
+        android:textColor="#fff"
+        android:text="Cancel" />
+</RelativeLayout>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:background="#808080"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/texttsale"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="1dp"
+                android:text="Sale"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+
+                />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/textrequired"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="1dp"
+                android:text="Required"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/textexchange"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="1dp"
+                android:text="Exchange"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/textrent"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="1dp"
+                android:text="Rent"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/textinquire"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="1dp"
+                android:text="Inquire"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/textinquire2"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="1dp"
+                android:text="Inquire"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#000000" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="63dp"
+        android:layout_marginTop="30dp">
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:horizontalSpacing="3dp"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="3dp" />
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/bottom_bar_background_color"
+            android:layout_alignParentBottom="true"
+
+            >
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text="button1" />
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text="button2" />
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text="button3" />
+
+        </LinearLayout>
+    -->
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="1dp"
+
+
+        android:background="#808080"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <TextView
+            android:id="@+id/textfilter"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="10dp"
+            android:text="Filter"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:weightSum="100" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/textsub"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="10dp"
+            android:text="Subcategory"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:weightSum="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/textsort"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="10dp"
+            android:text="Sortby"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:weightSum="1" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/textgrid"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="10dp"
+            android:text="Grid"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:weightSum="1" />
+
+    </LinearLayout>
+</RelativeLayout>

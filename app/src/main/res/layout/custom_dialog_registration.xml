@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00555555"
+
+   >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@drawable/drawable_white_rounded">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0000FF"
+        android:id="@+id/title"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:text="Registration not done"/>
+
+    <View
+        android:id="@+id/blueDevider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="5dp"
+        android:background="#0000FF" />
+    <TextView
+        android:id="@+id/camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="6dp"
+        android:gravity="center"
+        android:layout_below="@+id/blueDevider"
+        android:textColor="#0000FF"
+        android:textSize="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Please Register and Try again... " />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/camera"
+        android:layout_marginTop="15dp"
+        android:weightSum="100"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:background="@drawable/drawable_blue_rounded"
+        android:text="REGISTER"
+        android:layout_marginRight="3dp"
+        android:layout_weight="50"
+       />
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:background="@drawable/drawable_blue_rounded"
+        android:text="CANCEL"
+        android:layout_marginLeft="3dp"
+        android:layout_weight="50"/>
+    </LinearLayout>
+
+</RelativeLayout>
+</RelativeLayout>
